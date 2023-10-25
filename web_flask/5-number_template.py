@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 
 @app.route('/', strict_slashes=False)
-def index():
+def hello_hbnb():
     """returns Hello HBNB!"""
     return 'Hello HBNB!'
 
@@ -20,7 +20,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def cisfun(text):
+def display_text(text):
     """display “C ” followed by the value of the text variable"""
     return 'C ' + text.replace('_', ' ')
 
